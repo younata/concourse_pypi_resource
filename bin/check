@@ -1,15 +1,8 @@
 #!/usr/bin/env python
 
-import json
-from lib.check import check
+from lib.check import main
 
 
 if __name__ == "__main__":
-    import sys
-
-    source = json.load(sys.stdin)
-    print(json.dumps(check(
-        package_name=source['source']['package'],
-        existing_version=source.get('version')
-    )))
+    main()
 
