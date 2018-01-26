@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:alpine
 
 ADD bin /opt/resource
 ADD . /opt/lib/
